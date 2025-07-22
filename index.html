@@ -3,115 +3,112 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sweet CMU Cake</title>
+  <title>Sweet CMU Cake - ร้านเค้กนักศึกษามช.</title>
   <style>
     body {
-      margin: 0;
       font-family: 'Kanit', sans-serif;
-      background: #fff8f4;
-      color: #444;
-    }
-
-    header {
-      background-color: #ffe1ec;
-      padding: 40px 20px;
+      background-color: #fffafc;
+      margin: 0;
+      padding: 0;
       text-align: center;
     }
 
-    .logo {
-      font-size: 48px;
-      font-weight: bold;
-      color: #ff6699;
-      background: #fff;
-      display: inline-block;
-      padding: 10px 25px;
-      border-radius: 30px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    header {
+      padding: 30px 0;
+      background-color: #fff0f5;
+    }
+
+    header img {
+      width: 180px;
+      border-radius: 15px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 38px;
+      color: #843636;
+      margin-bottom: 10px;
     }
 
     .tagline {
       font-size: 18px;
-      color: #666;
-      margin-top: 10px;
+      color: #b35b5b;
+      margin-bottom: 40px;
     }
 
-    .products {
+    .cakes {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
-      padding: 30px;
-      gap: 20px;
-    }
-
-    .product {
-      background-color: #fff;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      width: 280px;
-      text-align: center;
+      justify-content: center;
+      gap: 30px;
       padding: 20px;
     }
 
-    .product img {
+    .cake {
+      background: #ffffff;
+      border-radius: 15px;
+      padding: 20px;
+      width: 260px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .cake:hover {
+      transform: scale(1.03);
+    }
+
+    .cake img {
       width: 100%;
       border-radius: 10px;
     }
 
-    .product h3 {
-      margin: 15px 0 5px;
-      color: #d94f70;
+    .cake h3 {
+      color: #803333;
+      margin: 10px 0 5px;
     }
 
-    .price {
-      font-size: 18px;
-      font-weight: bold;
-      color: #444;
+    .cake p {
+      color: #a94442;
+      font-size: 16px;
     }
 
-    .footer {
-      text-align: center;
-      padding: 20px;
-      background: #ffe1ec;
-      font-size: 14px;
-      color: #888;
-    }
-
-    @media (max-width: 768px) {
-      .products {
-        flex-direction: column;
-        align-items: center;
-      }
+    footer {
+      background: #ffe6e6;
+      padding: 15px;
+      margin-top: 40px;
+      color: #a94442;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="logo">🍰 Sweet CMU Cake 🍓</div>
-    <div class="tagline">ขนมเค้กโฮมเมด แสนอร่อย ราคานักศึกษา จากใจเด็กมช. 💕</div>
+    <img src="logo.png" alt="Sweet CMU Cake Logo">
+    <h1>Sweet CMU Cake</h1>
+    <p class="tagline">เค้กน่ารัก ราคานักศึกษา ส่งตรงถึงชาว มช. 🍰</p>
   </header>
 
-  <section class="products">
-    <div class="product">
-      <img src="https://cdn.pixabay.com/photo/2017/03/27/13/38/cake-2178880_960_720.jpg" alt="Strawberry Cake">
+  <section class="cakes">
+    <div class="cake">
+      <img src="https://cdn.pixabay.com/photo/2020/11/23/16/20/strawberry-cake-5769337_1280.jpg" alt="เค้กสตรอว์เบอร์รี่">
       <h3>เค้กสตรอว์เบอร์รี่สด</h3>
-      <p class="price">69 บาท</p>
+      <p>ราคา 95 บาท</p>
     </div>
-    <div class="product">
-      <img src="https://cdn.pixabay.com/photo/2016/11/29/03/35/cake-1869656_960_720.jpg" alt="Chocolate Cake">
-      <h3>เค้กช็อกโกแลตฟัดจ์</h3>
-      <p class="price">75 บาท</p>
+    <div class="cake">
+      <img src="https://cdn.pixabay.com/photo/2017/03/27/13/28/cake-2178871_1280.jpg" alt="เค้กช็อกโกแลต">
+      <h3>เค้กช็อกโกแลตหน้านิ่ม</h3>
+      <p>ราคา 89 บาท</p>
     </div>
-    <div class="product">
-      <img src="https://cdn.pixabay.com/photo/2016/11/23/15/36/cake-1850011_960_720.jpg" alt="Red Velvet Cake">
-      <h3>เค้กเรดเวลเวท</h3>
-      <p class="price">72 บาท</p>
+    <div class="cake">
+      <img src="https://cdn.pixabay.com/photo/2022/05/22/11/15/red-velvet-7213777_1280.jpg" alt="เค้กเรดเวลเวท">
+      <h3>เค้กเรดเวลเวทครีมชีส</h3>
+      <p>ราคา 99 บาท</p>
     </div>
   </section>
 
-  <div class="footer">
-    สั่งได้ทุกวันผ่าน IG: @sweetcmucake หรือ Line: @cmucake 💌 จัดส่งฟรีในเขตมหาวิทยาลัยเชียงใหม่
-  </div>
+  <footer>
+    © 2025 Sweet CMU Cake - เค้กโฮมเมดสำหรับชาวมหาวิทยาลัยเชียงใหม่ 🎓
+  </footer>
 
 </body>
 </html>
